@@ -12,7 +12,7 @@ function Header({ theme }) {
       height: "20vh",
       alignItems: "center",
       gap: "2%",
-      bgcolor: theme.palette.mode === "dark" ? "black" : "primary.main",
+      bgcolor: theme.palette.mode === "dark" ? "primary.main" : "primary.main",
     },
     avatar: {
       bgcolor: deepOrange[500],
@@ -26,8 +26,8 @@ function Header({ theme }) {
     <Box sx={styles.container}>
       <Avatar sx={styles.avatar} variant="square"></Avatar>
       <Box sx={styles.headresContainer}>
-        <Typography variant="headerVariant" sx={{color: theme.palette.mode === "dark" ? "white" : "#1d3557"}} >Welcome, James!</Typography>
-        <Typography sx={{color: theme.palette.mode === "dark" ? "white" : "grey"}}>
+        <Typography variant="headerVariant" sx={{color: theme.palette.mode === "dark" ? "#1d3557" : "#1d3557"}} >Welcome, James!</Typography>
+        <Typography sx={{color: theme.palette.mode === "dark" ? "grey" : "grey"}}>
           These are your analytics stats for today,
           <strong> 24 August 2021</strong>
         </Typography>
